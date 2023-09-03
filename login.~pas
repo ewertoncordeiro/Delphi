@@ -91,7 +91,7 @@ begin
      end
      else
      begin
-       MessageDlg('Usuário ou senha inválidos!', mtInformation, mbOKCancel, 0);
+       MessageDlg('Usuário ou senha inválidos teste!', mtInformation, mbOKCancel, 0);
        txtUsuario.Text := '';
        txtSenha.Text := '';
     end;
