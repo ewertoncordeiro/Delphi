@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/08/28 10:09:04.000.735,F:\aulas delphi\PDV\arquivos\Arquivos\Imagens\Login\Menu.dfm=F:\aulas delphi\PDV\Menu.dfm</Transaction>
+    <Transaction>2022/08/28 10:09:04.000.735,F:\aulas delphi\PDV\arquivos\Arquivos\Imagens\Login\Menu.pas=F:\aulas delphi\PDV\Menu.pas</Transaction>
+    <Transaction>2023/02/12 17:10:07.000.495,=F:\aulas delphi\PDV\Unit1.pas</Transaction>
+    <Transaction>2023/02/12 17:10:51.000.773,F:\aulas delphi\PDV\Unit1.dfm=F:\aulas delphi\PDV\Cadastros\Fornecedores.dfm</Transaction>
+    <Transaction>2023/02/12 17:10:51.000.773,F:\aulas delphi\PDV\Unit1.pas=F:\aulas delphi\PDV\Cadastros\Fornecedores.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,85 @@
+unit login;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, jpeg, StdCtrls, Buttons;
+
+type
+  TfrmLogin = class(TForm)
+    Panel1: TPanel;
+    Image1: TImage;
+    pnlLogin: TPanel;
+    Image2: TImage;
+    txtUsuario: TEdit;
+    txtSenha: TEdit;
+    SpeedButton1: TSpeedButton;
+
+    procedure FormCanResize(Sender: TObject; var NewWidth,
+      NewHeight: Integer; var Resize: Boolean);
+    procedure SpeedButton1Click(Sender: TObject);
+  private
+  { Private declarations }
+      procedure centralizarPainel;
+      procedure login;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLogin: TfrmLogin;
+
+implementation
+
+uses Menu;
+
+{$R *.dfm}
+
+
+procedure TfrmLogin.centralizarPainel;
+begin
+
+ pnlLogin.Top := (self.Height div 2) - (pnlLogin.Height div 2);
+ pnlLogin.Left := (self.Width div 2) - (pnlLogin.Width div 2);
+
+end;
+
+
+
+procedure TfrmLogin.FormCanResize(Sender: TObject; var NewWidth,
+  NewHeight: Integer; var Resize: Boolean);
+begin
+       centralizarPainel
+end;
+
+
+procedure TfrmLogin.SpeedButton1Click(Sender: TObject);
+begin
+    if Trim(txtUsuario.Text) = '' then
+    begin
+        MessageDlg('Preencha o usuário!', mtInformation, mbOKCancel, 0);
+        txtUsuario.SetFocus;
+        exit;
+    end;
+
+     if Trim(txtSenha.Text) = '' then
+    begin
+        MessageDlg('Preencha a senha!', mtInformation, mbOKCancel, 0);
+        txtSenha.SetFocus;
+        exit;
+    end;
+    login;
+
+end;
+
+procedure TfrmLogin.login;
+begin
+    //aqui cod de login
+   // MessageDlg('login efetuado!', mtInformation, mbOKCancel, 0);
+    frmMenu := TfrmMenu.Create(frmLogin);
+    frmMenu.ShowModal;
+
+end;
+
+end.

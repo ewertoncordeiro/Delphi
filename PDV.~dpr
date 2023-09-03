@@ -1,0 +1,21 @@
+program PDV;
+
+uses
+  Forms,
+  login in 'login.pas' {frmLogin},
+  Menu in 'arquivos\Arquivos\Imagens\Login\Menu.pas' {frmMenu},
+  usuarios in 'Cadastros\usuarios.pas' {frmUsuarios},
+  Funcionarios in 'Cadastros\Funcionarios.pas' {frmFuncionarios},
+  Cargos in 'Cadastros\Cargos.pas' {frmCargos};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmLogin, frmLogin);
+  Application.CreateForm(TfrmMenu, frmMenu);
+  Application.CreateForm(TfrmUsuarios, frmUsuarios);
+  Application.CreateForm(TfrmFuncionarios, frmFuncionarios);
+  Application.CreateForm(TfrmCargos, frmCargos);
+  Application.Run;
+end.
