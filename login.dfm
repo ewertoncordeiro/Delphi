@@ -6246,7 +6246,7 @@ object TfrmLogin: TTfrmLogin
       end
       object Button1: TButton
         Left = 40
-        Top = 248
+        Top = 168
         Width = 281
         Height = 49
         Caption = 'Login'
